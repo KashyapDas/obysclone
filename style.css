@@ -687,217 +687,14 @@ body{
 }
 
 
-@media (max-width : 600px) {
-    #loader{
-        height: 100%;
-        width: 100%;
-        background-color: black;
-        color: white;
-        /* border: 2px solid green; */
-        position: fixed;
-        z-index: 9999999;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    #loader-animation{
-        display: flex;
-        align-items: flex-start;
-        width: 100%;
-        height: fit-content;
-        /* border: 2px solid white; */
-        overflow: hidden;
-        line-height: 13vh;
-        position: relative;
-        white-space: nowrap;
-        padding-left: 2vh;
-    }
-    #loader-animation h1{
-        font-weight: 500;
-        font-family: "plain light";
-        text-transform: uppercase;
-        font-size: 9vh;
-        width: 100%;
-        display: flex;
-    }
-    #loader-animation:nth-child(1) span{
-        font-family: "silk serif";
-        font-size: 4.5vh;
-        /* border: 2px solid white; */
-        display: block;
-        width: 12%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
-    }
-    #loader-animation:nth-child(1) span:nth-child(1)
-    {
-        justify-content: flex-end;
-    }
-    #loader-animation:nth-child(1) span:nth-child(2)
-    {
-        margin-right: 0%;
 
-    }
-    #loader-animation:nth-child(3) span
-    {
-        font-family: "silk serif";
-        font-size: 5vh;
-        margin-top: 2vh;
-        animation-name: flickerAnimation;
-        animation-duration: 0.8s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-    }
-    #main{
-        position: relative;
-    }
-    #page1{
-        height: fit-content;
-        width: 100vw;
-        /* background-color: #151515; */
-        background-color: green;
-        color: white;
-        position: relative;
-    }
-    #navbar{
-        width: 100vw;
-        /* border: 2px solid red; */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0vw 6vw;
-        position: relative;
-    }
-    #navbar svg{
-        margin-top: -2.2vw;
-    }
-    #nav-part1{
-        display: none;
-        margin-top: 1.5vw; 
-        margin-left: -25vw;
-    }
-    #nav-part2{
-        display: none;
-        display: flex;
-        column-gap: 5vw;
-    }
-    #nav-part2 h2, #nav-part1 h2{
-        font-family: "plain light";
-        font-weight: 100;
-    }
-    #nav-part2 h2{
-        font-size: 1.1vw;
-    }
-    #nav-part1 h2{
-        margin-bottom: 0.2vw;
-        font-size: 1.2vw;
-    }
-    #landing-section{
-        /* border: 3px solid floralwhite; */
-        padding: 1vw;
-        margin-top: 5vw;
-        /* position: relative; */
-    }
-    .landing-text{
-        /* border: 2px solid blue; */
-        width: 100%;
-        padding-left: 25.5vw;
-        height: fit-content;
-        overflow: hidden;
-        z-index: 99;
-    }
-    .landing-text h1{
-        font-family: "plain light";
-        font-size: 7vw;
-        font-weight: 500;
-        text-transform: uppercase;
-        z-index: 99;
-    }
-    .landing-text span{
-        font-family: "plain light";
-        font-size: 7vw;
-        text-transform: uppercase;
-    }
-    .landing-text:nth-child(1) h1{
-        margin-left: -11.3vw;
-        /* color: yellow; */
-        display: flex;
-        align-items: flex-start;
-        column-gap: 7vw;
-    }
-    #web{
-        transition: all ease 0.4s;
-    }
-    #web:hover{
-        color: transparent;
-        -webkit-text-stroke: 1px white;
-    }
-    #graphic{
-        transition: all ease 0.4s;
-    }
-    #graphic:hover{
-        color: transparent;
-        -webkit-text-stroke: 1px white;
-    }
-    #landing-section>img{
-        height: 22vw;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        transform-origin: center;
-        z-index: -10;
-        opacity: 0;
-        pointer-events: none;
-    }
-    .landing-text:nth-child(1) h1::before{
-        content: "01";
-        font-family: "silk serif";
-        font-size: 3.5vw;
-        font-weight: 400;
-        /* border: 2px solid white; */
-    }
-    #picture-video-div{
-        /* border: 3px solid white; */
-        height: 30vw;
-        width: 70vw;
-        /* overflow: hidden; */
-        margin-left: 25.5vw;
-        position: relative;
-    }
-    #picture-video-div img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    #picture-video-div video{
-        display: none;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    #circle1{
-        height: 10vw;
-        width: 10vw;
-        background-color: #FFA63D;
-        position: absolute;
-        top: -13%;
-        right: 10%;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #circle1 i{
-        font-size: 4vw;
-    }
-}
 
 @media (max-width : 600px) {
     body{
         background-color: #151515;
     }
     #loader{
+        padding-left: 2vh;
         height: 100%;
         width: 100%;
         background-color: black;
@@ -1119,7 +916,7 @@ body{
     }
     #page3{
         height: fit-content;
-        background-color: #151515;
+        /* background-color: #151515; */
         padding: 4vw 0vh;
         display: flex;
         flex-direction: column;
@@ -1177,9 +974,9 @@ body{
     }
     #page3-info-div
     {
-        margin-top: 1vh;
+        margin-top: 3vh;
         position: initial;       
-        height: 70vw;
+        height: fit-content;
         width: 95%;
     }
     .page3-child-div{
