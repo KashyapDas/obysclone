@@ -928,6 +928,7 @@ body{
         flex-direction: column;
         align-items: center;
     }
+    
     #heading-div{
         padding-left: 2vw;
     }
@@ -972,10 +973,10 @@ body{
     }
     #mini-part2 #page3-text-div
     {
-        width: 25%;
+        width: 35%;
     }
     #mini-part2 #page3-text-div h1{
-        font-size: 1.1vh;
+        font-size: 1.8vh;
         font-weight: 200;
     }
     #page3-info-div
@@ -1097,3 +1098,7 @@ body{
         font-size: 1vh;
     }
 }
+
+/* @media (min-width : 425px) {
+    
+} */
