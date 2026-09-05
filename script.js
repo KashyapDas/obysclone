@@ -166,31 +166,39 @@ function circleHover(){
             height:"100%",
             width:"100%",
             duration:0.2,
-            ease:"power2.out"
-        })
-        gsap.to("#white-circle1 h2",{
-            opacity:1,
-            duration:0.2,
-            delay:0.4,
             ease:"power2.out",
-            color:"black"
+            onStart : ()=>{
+                gsap.to("#white-circle1 h2",{
+                    opacity:1,
+                    scale : 1,
+                    duration:0.2,
+                    delay:0.4,
+                    ease:"power2.out",
+                    color:"black"
+                });
+            }
         })
+        
     })
     document.querySelector("#w-circle1").addEventListener("mouseleave",function(){
         document.querySelector(".mousefollower").style.opacity = 1
-        gsap.to("#white-circle1 h2",{
-            opacity:0,
-            duration:0.2,
-            ease:"power2.out",
-            color:"transparent"
-        })
         gsap.to("#white-circle1",{
             height:"0%",
             width:"0%",
             duration:0.2,
             delay:0.2,
-            ease:"power2.out"
-        })
+            ease:"power2.out",
+            onStart : ()=>{
+                gsap.to("#white-circle1 h2",{
+                    scale : 0,
+                    opacity:0,
+                    ease:"power2.out",
+                    color:"transparent"
+                })
+            }
+        }) 
+        
+               
     })
     // Circle 2
     document.querySelector("#w-circle2").addEventListener("mouseenter",function(){
@@ -199,30 +207,34 @@ function circleHover(){
             height:"100%",
             width:"100%",
             duration:0.2,
-            ease:"power2.out"
-        })
-        gsap.to("#white-circle2 h2",{
-            opacity:1,
-            duration:0.2,
-            delay:0.4,
             ease:"power2.out",
-            color:"black"
+            onStart : ()=>{
+                gsap.to("#white-circle2 h2",{
+                    opacity:1,
+                    duration:0.2,
+                    delay:0.4,
+                    ease:"power2.out",
+                    color:"black"
+                })
+            }
         })
+        
     })
     document.querySelector("#w-circle2").addEventListener("mouseleave",function(){
         document.querySelector(".mousefollower").style.opacity = 1
-        gsap.to("#white-circle2 h2",{
-            opacity:0,
-            duration:0.2,
-            ease:"power2.out",
-            color:"transparent"
-        })
         gsap.to("#white-circle2",{
             height:"0%",
             width:"0%",
             duration:0.2,
             delay:0.2,
-            ease:"power2.out"
+            ease:"power2.out",
+            onStart : ()=>{
+                gsap.to("#white-circle2 h2",{
+                    opacity:0,
+                    ease:"power2.out",
+                    color:"transparent"
+                })
+            }
         })
     })
     // Circle 3
@@ -232,30 +244,35 @@ function circleHover(){
             height:"100%",
             width:"100%",
             duration:0.2,
-            ease:"power2.out"
-        })
-        gsap.to("#white-circle3 h2",{
-            opacity:1,
-            duration:0.2,
-            delay:0.4,
             ease:"power2.out",
-            color:"black"
+            onStart : ()=>{
+                gsap.to("#white-circle3 h2",{
+                    opacity:1,
+                    duration:0.2,
+                    delay:0.4,
+                    ease:"power2.out",
+                    color:"black"
+                })
+            }
+        
         })
+        
     })
     document.querySelector("#w-circle3").addEventListener("mouseleave",function(){
         document.querySelector(".mousefollower").style.opacity = 1
-        gsap.to("#white-circle3 h2",{
-            opacity:0,
-            duration:0.2,
-            ease:"power2.out",
-            color:"transparent"
-        })
         gsap.to("#white-circle3",{
             height:"0%",
             width:"0%",
             duration:0.2,
             delay:0.2,
-            ease:"power2.out"
+            ease:"power2.out",
+            onStart : ()=>{
+                gsap.to("#white-circle3 h2",{
+                    opacity:0,
+                    ease:"power2.out",
+                    color:"transparent"
+                })
+            }
         })
     })
 }

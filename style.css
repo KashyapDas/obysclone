@@ -215,6 +215,7 @@ body{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: bottom;
 }
 #picture-video-div video{
     display: none;
@@ -530,7 +531,8 @@ body{
     left: 47vw;
     height: 43vw;
     width: 30vw;
-    background-color: #3F7DF4;
+    background-color: #AECDDE;
+    color:  black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -539,7 +541,7 @@ body{
 .page3-child-div{
     width: 90%;
     padding: 2.5vw 1vw;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -585,13 +587,17 @@ body{
     font-family: "plain light";
     font-size: 8vw;
     font-weight: 100;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px #f8e558;
     color: transparent;
     animation-name: marqueAnimation;
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+#page4 .color-div1 h2{
+    -webkit-text-stroke: 2px #6bdbf8 !important;
+}
+
 #page4 .marque-div:nth-child(2) h2, #page4 .marque-div:nth-child(4) h2
 {
     animation-direction: reverse;
